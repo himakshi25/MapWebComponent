@@ -1,0 +1,13 @@
+{
+  "name": "map-comp",
+  "description": "shows the map and location pointer of the position given and to show accuracy by representing with circle",
+  "main": "map-comp.js",
+  "dependencies": {
+    "@polymer/polymer": "^3.0.0"
+  },
+  "devDependencies": {
+    "@polymer/iron-demo-helpers": "^3.0.0-pre.19",
+    "@webcomponents/webcomponentsjs": "^2.0.0",
+    "wct-browser-legacy": "^1.0.0"
+  }
+}

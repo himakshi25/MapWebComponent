@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>map-comp demo</title>
+
+    <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+
+    <script type="module">
+      import '@polymer/iron-demo-helpers/demo-pages-shared-styles';
+      import '@polymer/iron-demo-helpers/demo-snippet';
+    </script>
+
+    <script type="module" src="../map-comp.js"></script>
+<!--
+    <custom-style>
+      <style is="custom-style" include="demo-pages-shared-styles">
+      </style>
+    </custom-style>
+-->
+    <script>
+    function test()
+    {
+      var x = document.getElementById("myForm");
+      var doc=document.getElementsByTagName("map-comp");
+      doc[0].setAttribute ( "latitude" , x.elements[0].value);
+      doc[0].setAttribute ( "longitude",x.elements[1].value);
+      doc[0].setAttribute ( "accuracy", x.elements[2].value);
+      //console.log(doc.longitude+' '+doc.latitude+' '+  doc.accuracy);
+    }
+    </script>
+  </head>
+  <body>
+    <form id="myForm">
+      Latitude: <input type="text" name="lat" value=28.455134 > &nbsp; &nbsp;
+      Longitude: <input type="text" name="long" value=77.071841 > &nbsp; &nbsp;
+      Accuracy: <input type="text" name="acc" value=50 >
+    <input type="button" value="Submit" onclick="test()">
+    </form>
+     <map-comp latitude=27.4555 longitude=78.28982 accuracy=5000></map-comp>
+  </body>
+</html>
