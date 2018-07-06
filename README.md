@@ -1,3 +1,6 @@
+# MapWebComponent
+Eko Internship Project (Tech: Google Polymer)
+
 # \<map-comp\>
 
 shows the map and location pointer of the position given and to show accuracy by representing with circle
@@ -19,3 +22,5 @@ $ polymer test
 ```
 
 Your application is already set up to be tested via [web-component-tester](https://github.com/Polymer/web-component-tester). Run `polymer test` to run your application's test suite locally.
+
+
